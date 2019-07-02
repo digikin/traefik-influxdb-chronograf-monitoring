@@ -1,6 +1,6 @@
 # traefik-influxdb-chronograf-monitoring
 Monitoring Traefik metrics with InfluxDB and Chronograf
-<<<<<<< HEAD
+
 ![Reverse Proxy stats](./Screenshot.png)
 =======
 
