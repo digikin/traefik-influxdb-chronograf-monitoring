@@ -21,6 +21,6 @@ dashboard = true
     address = "http://influxdb:8086"
     protocol = "http"
     pushinterval = "10s"
-    database = "1234"
+    database = "traefik"
     retentionpolicy = "100"
 
