@@ -5,6 +5,9 @@ Monitoring Traefik metrics with InfluxDB and Chronograf
 =======
 
 Using Chronograf and InfluxDB to monitor Traefik's metrics.  
+Traefik dashboard login is admin:supersecret
 
-Still woking on this template works.  
+Still woking on this but the template works.
+It will make a database called traefik.
+
 
