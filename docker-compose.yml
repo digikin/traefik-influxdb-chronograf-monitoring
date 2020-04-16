@@ -2,7 +2,7 @@ version: '3'
 
 services:
   traefik:
-    image: traefik:v1.7
+    image: traefik:v1.7.24
     command: --docker
     ports:
       - 80:80
@@ -22,19 +22,19 @@ services:
       - proxy
     labels: 
       - "traefik.enable=true"
-      - "traefik.frontend.rule=PathPrefix:/static/"
+      - "traefik.frontend.rule=Host:localhost"
       - "traefik.docker.network=proxy"
   influxdb:
-    image: influxdb:1.7.7
+    image: influxdb:1.8
     networks: 
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.backend=localhost"
+      - "traefik.backend=Host:influx.localhost"
       - "traefik.port=8086"
       - "traefik.docker.network=proxy"
   chronograf:
-    image: chronograf:1.7.12
+    image: chronograf:1.8
     networks:
       - proxy
     labels:
